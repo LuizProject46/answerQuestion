@@ -1,0 +1,26 @@
+<%- include('./pertils/header.ejs')%>
+<body>
+    <%- include('./pertils/navbar.ejs')%>
+   <div class="container">
+       <div id="form-pergunta" class="card">
+           <div class="card-header">
+                <h3>Realizar pergunta</h3>
+           </div>
+           <div class="card-body">
+                <form method="POST" action="/salvarpergunta">
+                    <label>Título</label>
+                    <input class="form-control" name="titulo"type="text" placeholder="Titulo">
+                </br>
+                    <label>Descrição</label>
+                    <textarea class="form-control" name="descricao" placeholder="Digite sua pergunta aqui"></textarea>
+                </br>
+                    <button class="btn btn-outline-danger">Perguntar</button>
+                </form>
+           </div>
+       </div>
+       
+   </div>
+   
+
+</body>
+<%- include('./pertils/footer.ejs')%>
